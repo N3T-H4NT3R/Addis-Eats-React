@@ -1,0 +1,214 @@
+.checkout-page {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.checkout-header {
+  margin-bottom: 30px;
+}
+
+.checkout-header h1 {
+  margin: 0 0 8px;
+  color: var(--dark-green);
+}
+
+.checkout-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.checkout-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkout-form-group label {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.checkout-form-group input,
+.checkout-form-group textarea {
+  width: 100%;
+  padding: 13px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+
+.checkout-form-group input {
+  height: 48px;
+}
+
+.checkout-form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.checkout-form-group input:focus,
+.checkout-form-group textarea:focus {
+  border-color: var(--green);
+}
+
+.checkout-form-group input::placeholder,
+.checkout-form-group textarea::placeholder {
+  color: var(--muted);
+}
+
+.checkout-error {
+  margin: 0;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.checkout-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px;
+  background: var(--light-green);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.checkout-summary div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.checkout-summary span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.checkout-summary strong {
+  color: var(--text);
+  font-size: 16px;
+}
+
+.checkout-submit {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--dark-green);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkout-submit:hover {
+  background: var(--green);
+}
+
+.checkout-empty {
+  padding: 50px 20px;
+  text-align: center;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.checkout-empty h2 {
+  margin-bottom: 20px;
+  color: var(--dark-green);
+}
+
+.checkout-empty button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--dark-green);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkout-empty button:hover {
+  background: var(--green);
+}
+
+.checkout-success {
+  padding: 50px 20px;
+  text-align: center;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.checkout-success h1 {
+  margin-bottom: 15px;
+  color: var(--dark-green);
+}
+
+.checkout-success p {
+  margin: 0 0 25px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.checkout-success button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--dark-green);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkout-success button:hover {
+  background: var(--green);
+}
+
+@media (max-width: 600px) {
+  .checkout-page {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .checkout-header {
+    margin-bottom: 20px;
+  }
+
+  .checkout-header h1 {
+    font-size: 26px;
+  }
+
+  .checkout-form {
+    padding: 18px;
+    gap: 18px;
+  }
+
+  .checkout-summary {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .checkout-summary div {
+    width: 100%;
+  }
+}

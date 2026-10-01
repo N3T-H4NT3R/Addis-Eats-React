@@ -1,0 +1,457 @@
+.dish-manager {
+  width: 100%;
+}
+
+.dish-manager .dish-manager-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.dish-manager .dish-manager-header h1 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 28px;
+}
+
+.dish-manager .dish-manager-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.dish-manager .dish-count {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--light-green);
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dish-manager .dish-search {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.dish-manager .dish-search input {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.dish-manager .dish-search input::placeholder {
+  color: var(--muted);
+}
+
+.dish-manager .dish-search input:focus {
+  border-color: var(--green);
+}
+
+.dish-manager .dish-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dish-manager .dish-card {
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dish-manager .dish-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.dish-manager .dish-image-wrapper {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  background: var(--light-green);
+}
+
+.dish-manager .dish-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.dish-manager .dish-no-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.dish-manager .dish-card-content {
+  padding: 16px;
+}
+
+.dish-manager .dish-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.dish-manager .dish-card-top h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 17px;
+}
+
+.dish-manager .dish-card-top strong {
+  color: var(--green);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.dish-manager .dish-category {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--light-green);
+  color: var(--green);
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.dish-manager .dish-card-content > p {
+  margin: 12px 0 16px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+.dish-manager .dish-availability {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 14px 0;
+}
+
+.dish-manager .dish-status {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.dish-manager .dish-status.available {
+  color: var(--green);
+}
+
+.dish-manager .dish-status.finished {
+  color: var(--muted);
+}
+
+.dish-manager .availability-toggle {
+  position: relative;
+  width: 42px;
+  height: 23px;
+  padding: 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dish-manager .availability-toggle.on {
+  background: var(--green);
+}
+
+.dish-manager .availability-toggle.off {
+  background: var(--border);
+}
+
+.dish-manager .toggle-circle {
+  position: absolute;
+  top: 3px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: var(--white);
+  transition: left 0.2s ease;
+}
+
+.dish-manager .availability-toggle.on .toggle-circle {
+  left: 22px;
+}
+
+.dish-manager .availability-toggle.off .toggle-circle {
+  left: 3px;
+}
+
+.dish-manager .dish-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.dish-manager .view-dish-button,
+.dish-manager .edit-dish-button,
+.dish-manager .delete-dish-button {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+
+.dish-manager .view-dish-button {
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--text);
+}
+
+.dish-manager .view-dish-button:hover {
+  background: var(--light-green);
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.dish-manager .edit-dish-button {
+  border: 1px solid var(--green);
+  background: var(--green);
+  color: var(--white);
+}
+
+.dish-manager .edit-dish-button:hover {
+  opacity: 0.9;
+}
+
+.dish-manager .delete-dish-button {
+  border: 1px solid #dc3545;
+  background: transparent;
+  color: #dc3545;
+}
+
+.dish-manager .delete-dish-button:hover {
+  background: #dc3545;
+  color: var(--white);
+}
+
+.dish-manager .dish-empty {
+  padding: 60px 20px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.dish-manager .dish-empty h2 {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 20px;
+}
+
+.dish-manager .dish-empty p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.dish-manager .dish-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.dish-manager .dish-modal {
+  width: 100%;
+  max-width: 550px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 25px;
+  box-sizing: border-box;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.dish-manager .dish-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.dish-manager .dish-modal-header h2 {
+  margin: 0 0 5px;
+  color: var(--text);
+  font-size: 22px;
+}
+
+.dish-manager .dish-modal-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.dish-manager .close-dish-modal {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 7px;
+  background: var(--light-green);
+  color: var(--text);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.dish-manager .close-dish-modal:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+.dish-manager .dish-modal-image {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.dish-manager .dish-modal-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.dish-manager .dish-modal-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.dish-manager .dish-modal-info span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.dish-manager .dish-modal-info strong {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.dish-manager .dish-modal-description h3 {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.dish-manager .dish-modal-description p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+  .dish-manager .dish-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .dish-manager .dish-manager-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .dish-manager .dish-manager-header h1 {
+    font-size: 24px;
+  }
+
+  .dish-manager .dish-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dish-manager .dish-image-wrapper {
+    height: 210px;
+  }
+
+  .dish-manager .dish-modal-overlay {
+    padding: 12px;
+  }
+
+  .dish-manager .dish-modal {
+    max-height: 94vh;
+    padding: 18px;
+  }
+
+  .dish-manager .dish-modal-image {
+    height: 200px;
+  }
+
+  .dish-manager .dish-modal-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .dish-manager .dish-actions {
+    flex-direction: column;
+  }
+
+  .dish-manager .dish-image-wrapper {
+    height: 190px;
+  }
+
+  .dish-manager .dish-modal {
+    padding: 15px;
+  }
+
+  .dish-manager .dish-modal-header h2 {
+    font-size: 19px;
+  }
+}

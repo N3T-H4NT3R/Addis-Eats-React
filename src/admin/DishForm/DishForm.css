@@ -1,0 +1,146 @@
+
+.dish-form {
+  margin-bottom: 25px;
+  padding: 25px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.dish-form-header {
+  margin-bottom: 20px;
+}
+
+.dish-form-header h2 {
+  margin: 0 0 5px;
+  color: var(--text);
+  font-size: 20px;
+}
+
+.dish-form-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.dish-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.dish-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dish-form-full {
+  grid-column: 1 / -1;
+}
+
+.dish-form-group label {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dish-form-group input,
+.dish-form-group textarea {
+  width: 100%;
+  padding: 11px 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.dish-form-group input {
+  height: 44px;
+}
+
+.dish-form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.dish-form-group input::placeholder,
+.dish-form-group textarea::placeholder {
+  color: var(--muted);
+}
+
+.dish-form-group input:focus,
+.dish-form-group textarea:focus {
+  border-color: var(--green);
+}
+
+.dish-form-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dish-save-button,
+.dish-cancel-button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dish-save-button {
+  border: none;
+  background: var(--green);
+  color: var(--white);
+}
+
+.dish-save-button:hover {
+  opacity: 0.9;
+}
+
+.dish-cancel-button {
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--text);
+}
+
+.dish-cancel-button:hover {
+  background: var(--light-green);
+}
+
+/* ================================
+   Mobile
+================================ */
+
+@media (max-width: 600px) {
+  .dish-form {
+    padding: 18px;
+  }
+
+  .dish-form-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .dish-form-full {
+    grid-column: auto;
+  }
+
+  .dish-form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dish-save-button,
+  .dish-cancel-button {
+    width: 100%;
+  }
+}

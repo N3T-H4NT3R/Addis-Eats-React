@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Doro Wot",
+    "category": "Ethiopian",
+    "price": 350,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGXC-PHsDLGirgSFrOy_IPP7c9DP0AH9shyUNz8ubyZzOrKcyWrxkuBU0&s=10",
+    "description": "Traditional Ethiopian chicken stew with berbere spices."
+  },
+  {
+    "id": 2,
+    "name": "Shiro",
+    "category": "Ethiopian",
+    "price": 180,
+    "image": "https://imagedelivery.net/AqOYYty1zFQTgiffq2rkbg/food-shiro-wat-fbad400f1a/width=1600,height=900,fit=cover",
+    "description": "Smooth Ethiopian chickpea stew with rich spices."
+  },
+  {
+    "id": 3,
+    "name": "Tibs",
+    "category": "Ethiopian",
+    "price": 400,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Tibs_in_Yod_Abyssinia.jpg/960px-Tibs_in_Yod_Abyssinia.jpg",
+    "description": "Tender beef cooked with onions, peppers, and spices."
+  },
+  {
+    "id": 4,
+    "name": "Kitfo",
+    "category": "Ethiopian",
+    "price": 450,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Kitfo_Ethiopian_Food.JPG/960px-Kitfo_Ethiopian_Food.JPG",
+    "description": "Seasoned minced beef served with traditional Ethiopian sides."
+  },
+  {
+    "id": 5,
+    "name": "Firfir",
+    "category": "Ethiopian",
+    "price": 200,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Firfir.JPG/1280px-Firfir.JPG",
+    "description": "Shredded injera mixed with berbere sauce and spices."
+  },
+  {
+    "id": 6,
+    "name": "Chechebsa",
+    "category": "Ethiopian",
+    "price": 170,
+    "image": "https://tarasmulticulturaltable.com/wp-content/uploads/2023/04/Chechebsa-Ethiopian-Torn-Flatbread-Breakfast-5-of-7-1024x683.jpg",
+    "description": "Pieces of flatbread mixed with spiced butter and honey."
+  },
+  {
+    "id": 7,
+    "name": "Margherita Pizza",
+    "category": "Pizza",
+    "price": 450,
+    "image": "https://www.superhealthykids.com/wp-content/uploads/2023/05/margherita-pizza-8.jpg",
+    "description": "Classic pizza with tomato sauce, mozzarella, and fresh basil."
+  },
+  {
+    "id": 8,
+    "name": "Pepperoni Pizza",
+    "category": "Pizza",
+    "price": 550,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Pepperoni_pizza_%281%29.jpg/960px-Pepperoni_pizza_%281%29.jpg",
+    "description": "Crispy pizza topped with mozzarella and pepperoni."
+  },
+  {
+    "id": 9,
+    "name": "Classic Burger",
+    "category": "Burgers",
+    "price": 400,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Classic_Burger_-_Joe%27s_Burger_House_2024-07-07.jpg",
+    "description": "Juicy beef burger with lettuce, tomato, cheese, and sauce."
+  },
+  {
+    "id": 10,
+    "name": "Cheese Burger",
+    "category": "Burgers",
+    "price": 450,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/960px-Cheeseburger.jpg",
+    "description": "Juicy beef burger topped with melted cheese and fresh vegetables."
+  },
+  {
+    "id": 11,
+    "name": "Fresh Orange Juice",
+    "category": "Drinks",
+    "price": 120,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Glass_of_Fresh_Orange_Juice.jpg/960px-Glass_of_Fresh_Orange_Juice.jpg",
+    "description": "Freshly squeezed orange juice served chilled."
+  },
+  {
+    "id": 12,
+    "name": "Mango Juice",
+    "category": "Drinks",
+    "price": 150,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Mango_juice_a0.jpg/960px-Mango_juice_a0.jpg",
+    "description": "Refreshing mango juice made from ripe tropical mangoes."
+  }
+]

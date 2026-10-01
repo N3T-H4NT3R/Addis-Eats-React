@@ -1,0 +1,191 @@
+.dish-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.dish-card {
+  color: var(--text);
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dish-image {
+  display: block;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.dish-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dish-card:hover .dish-image img {
+  transform: scale(1.05);
+}
+
+.dish-info {
+  padding: 20px;
+}
+
+.dish-info h2 {
+  margin: 0 0 10px;
+  color: var(--dark-green);
+  font-size: 22px;
+}
+
+.dish-description {
+  min-height: 48px;
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.dish-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.dish-price {
+  color: var(--green);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.dish-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: var(--dark-green);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.dish-button:hover {
+  background: var(--green);
+}
+
+.dish-button:active {
+  transform: scale(0.97);
+}
+
+.menu-message {
+  width: 100%;
+  margin: 0;
+  padding: 50px 20px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.dish-image {
+  position: relative;
+  display: block;
+}
+
+.dish-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.favorite-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--muted);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.2s ease;
+}
+
+.favorite-button:hover {
+  transform: scale(1.08);
+}
+
+.favorite-button.active {
+  color: #e11d48;
+}
+
+@media (max-width: 950px) {
+  .dish-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .dish-image {
+    height: 220px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .dish-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .dish-image {
+    height: 240px;
+  }
+
+  .dish-info {
+    padding: 18px;
+  }
+
+  .dish-info h2 {
+    font-size: 20px;
+  }
+
+  .dish-description {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .dish-image {
+    height: 210px;
+  }
+  .dish-info {
+    padding: 15px;
+  }
+  .dish-bottom {
+    align-items: flex-start;
+  }
+  .dish-button {
+    padding: 9px 12px;
+  }
+
+}

@@ -1,0 +1,153 @@
+.menu-page {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  padding: 50px 30px;
+  background: var(--cream);
+}
+
+.menu-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.menu-label {
+  margin: 0 0 10px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.menu-header h1 {
+  margin: 0;
+  color: var(--dark-green);
+  font-size: clamp(40px, 6vw, 60px);
+  line-height: 1.1;
+}
+
+.menu-description {
+  max-width: 550px;
+  margin: 15px auto 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.menu-categories {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.category-button {
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  background: var(--white);
+  color: var(--dark-green);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.category-button:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.category-button.active {
+  background: var(--dark-green);
+  color: var(--white);
+  border-color: var(--dark-green);
+}
+
+.menu-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-message.error {
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 17px;
+  color: #c0392b;
+}
+
+@media (max-width: 900px) {
+  .menu-page {
+    padding: 45px 25px;
+  }
+
+  .menu-description {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .menu-page {
+    min-height: calc(100vh - 70px);
+    padding: 35px 15px;
+  }
+
+  .menu-header {
+    margin-bottom: 25px;
+  }
+
+  .menu-label {
+    font-size: 12px;
+  }
+
+  .menu-header h1 {
+    font-size: 40px;
+  }
+
+  .menu-description {
+    font-size: 15px;
+  }
+
+  .menu-categories {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    gap: 8px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 5px;
+    scrollbar-width: none;
+  }
+
+  .menu-categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-button {
+    flex-shrink: 0;
+    padding: 9px 17px;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .menu-page {
+    padding: 30px 12px;
+  }
+
+  .menu-header h1 {
+    font-size: 36px;
+  }
+
+  .menu-description {
+    font-size: 14px;
+  }
+
+}
